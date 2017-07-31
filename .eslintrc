@@ -1,0 +1,6 @@
+{
+    "extends": "webbylab",
+    "rules": {
+        "linebreak-style": 0,
+    }
+}

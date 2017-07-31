@@ -1,0 +1,35 @@
+{
+    "mainUrl": "http://localhost:",
+    "secret": "3e86e2e5c2a6e29c8845cdb1f1f68d16",
+    "appPort":  8080,
+    "adminPort": 8081,
+    "testAdminPort": 7081,
+    "expiredPeriod": [3, "months"],
+
+    "staticPath": "public/static",
+    "testStaticPath": "./test_static",
+    "staticUrl": "static",
+    "postImagesMaxSize": 4000000,
+
+    "db":{
+        "name": "pet-be",
+        "testName": "pet-be-test",
+        "host": "localhost",
+        "port": 27017,
+        "user": "",
+        "password":""
+    },
+
+    "mail": {
+        "from": "petProject@gmail.com",
+        "transport": "SMTP",
+        "transport_options": {
+            "service": "Gmail",
+            "auth": {
+                "user": "",
+                "pass": ""
+            }
+        }
+    },
+    "adminEmail": "CHANGE_ME"
+}
