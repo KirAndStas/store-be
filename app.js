@@ -52,7 +52,7 @@ app.use(multipartMiddleware);
 
 app.listen(appPort);
 
-app.use('/admin/', router);
+app.use('/api/', router);
 app.use('/apidoc', emb);
 app.use('/static', express.static(path.join(__dirname, staticPath)));
 
@@ -60,6 +60,7 @@ app.use('/static', express.static(path.join(__dirname, staticPath)));
 router.post('/sessions', routes.sessions.create);
 
 // Users
-router.post('/users', routes.users.update);
+router.post('/users/:id', routes.users.update);
+router.post('/users', routes.users.create);
 
 export default app;

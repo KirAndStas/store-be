@@ -26,6 +26,6 @@ keystone.import('./lib/models/');
 // eslint-disable-next-line
 keystone.set('routes', require('./app'));
 
-// keystone.start();
+keystone.start();
 
 export default keystone;
